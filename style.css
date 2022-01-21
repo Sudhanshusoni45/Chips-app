@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla&family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: auto; */
+}
+
+body {
+  font-family: "Karla";
+  background-color: #666;
+}
+
+.container {
+  padding: 1rem;
+  /* border: red solid; */
+  background-color: white;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  border-radius: 7px;
+
+  /* display: flex; */
+}
+
+.chips {
+  background-color: #cab8ff;
+  /* border: red solid; */
+  padding: 0.3rem 0.8rem;
+  padding-left: 1rem;
+  display: inline-block;
+  font-size: 18px;
+  border-radius: 15px;
+
+  margin-right: 0.3rem;
+}
+
+.chips small {
+  margin-bottom: 2px;
+}
+
+.close-btn {
+  font-size: 14px;
+  margin-left: 2px;
+  color: #fff;
+}
+
+.close-btn:hover {
+  cursor: pointer;
+}
+
+.input-Div {
+  width: 40%;
+  margin: 0 auto;
+  /* border: red solid; */
+  text-align: center;
+}
+
+.input-field {
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 30px;
+}
+
+.input-field::placeholder {
+  /* text-align: center; */
+  padding-left: 2.3rem;
+}
+
+.input-field:focus {
+  border: none;
+  outline: none;
+}
