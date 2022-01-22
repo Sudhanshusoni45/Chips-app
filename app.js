@@ -2,6 +2,8 @@ const container = document.querySelector(".container");
 const inputValueRef = document.querySelector(".input-field");
 const div = document.createElement("div");
 
+const bgColors = ["#C1FFD7", "#B5DEFF", "#FCFFA6", "#cab8ff"];
+
 inputValueRef.addEventListener("keyup", chipHandler);
 
 function chipHandler(e) {
@@ -15,7 +17,7 @@ function chipHandler(e) {
     chipsArray.push(inputValue);
     chipsArray.map((item) => {
       container.innerHTML += `<div class="chips">
-      <small class="chip-text">${item}</small><i class="fas fa-times-circle close-btn"></i>
+      <small class="chip-text">${item} </small><i class="fas fa-times-circle close-btn"></i>
 
     </div>`;
     });
@@ -24,11 +26,10 @@ function chipHandler(e) {
 
     for (i = 0; i < closeBtnArr.length; i++) {
       closeBtnArr[i].addEventListener("click", (e) => {
-        console.log(e.target.parentNode);
-        console.log(container.children[i]);
         container.removeChild(e.target.parentNode);
       });
     }
+    e.target.value = null;
   }
 }
 // arr = [1,2,3,4]

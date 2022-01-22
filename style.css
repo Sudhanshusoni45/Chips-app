@@ -9,20 +9,32 @@
 
 body {
   font-family: "Karla";
-  background-color: #666;
+  background-color: rgb(230, 230, 230);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  border: red solid;
+  height: 80vh;
 }
 
 .container {
   padding: 1rem;
   /* border: red solid; */
   background-color: white;
-  width: 60%;
+  width: 70%;
+  min-height: 64px;
   margin: 0 auto;
   margin-top: 3rem;
   margin-bottom: 2rem;
   border-radius: 7px;
+  box-shadow: 2px 2px 4px 5px rgba(109, 109, 109, 0.05);
 
-  /* display: flex; */
+  display: flex;
+  flex-flow: row wrap;
+  row-gap: 1rem;
 }
 
 .chips {
@@ -73,3 +85,5 @@ body {
   border: none;
   outline: none;
 }
+
+/* #C1FFD7 #B5DEFF #FCFFA6 */
