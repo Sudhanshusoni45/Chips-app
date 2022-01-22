@@ -4,6 +4,12 @@ const div = document.createElement("div");
 
 const bgColors = ["#C1FFD7", "#B5DEFF", "#FCFFA6", "#cab8ff"];
 
+const firstChip = document.getElementById("firstChip");
+
+firstChip.addEventListener("click", (e) => {
+  container.removeChild(e.target.parentNode);
+});
+
 inputValueRef.addEventListener("keyup", chipHandler);
 
 function chipHandler(e) {
@@ -16,7 +22,7 @@ function chipHandler(e) {
     div.innerText = inputValue;
     chipsArray.push(inputValue);
     chipsArray.map((item) => {
-      container.innerHTML += `<div class="chips">
+      container.innerHTML += `<div class="chips" >
       <small class="chip-text">${item} </small><i class="fas fa-times-circle close-btn"></i>
 
     </div>`;
