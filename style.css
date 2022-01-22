@@ -16,7 +16,7 @@ body {
   display: flex;
   justify-content: center;
   flex-flow: column;
-  border: red solid;
+  /* border: red solid; */
   height: 80vh;
 }
 
@@ -79,6 +79,7 @@ body {
 .input-field::placeholder {
   /* text-align: center; */
   padding-left: 2.3rem;
+  font-weight: 600;
 }
 
 .input-field:focus {
